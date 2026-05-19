@@ -1,0 +1,28 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    padding:0%;
+}
+.my-button{
+    border-radius: 25px;
+    background-color: rgb(41, 41, 230);
+    padding: 10px;
+}
+.container3{
+    display: flex;
+    gap:30;
+}
+.main content{
+    display: flex;
+    gap:50px;
+
+    
+}
+sliderbar{
+    flex:1;
+}

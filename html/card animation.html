@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html laang="en">
+    <head>
+        <style>
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translaterY(30pz);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translaterY(0);
+
+                }
+
+                }
+
+                @keyframes pulse {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.1);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                body {
+                    margin: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    background: linear-gradient(135deg, rgb(197, 121, 121),rgb(215, 215, 121));
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .card-container {
+                    width: 300px;
+                    height: 300px;
+                    perspective: 1000px;
+                    animation: fadeIn 1.2s ease-out forwards;
+
+
+                }
+
+                .card{
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+
+                }
+
+                .card-container:hover .card{
+                    transform: rotateY(180deg);
+                }
+
+                .card-front, .card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    border-radius: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    box-shadow: rgb(85, 85, 201);
+
+
+                }
+
+                .card-front{
+                    background: white;
+                }
+
+                .profile-image {
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 50%;
+                    border: 4px solid rgb(143, 218, 51);
+                    margin-bottom: 15px;
+                    object-fit: cover;
+                }
+
+                .name {
+                    font-size: 26px;
+                    font-weight: bold;
+                    color: rgb(226, 43, 110);
+                }
+
+                .title {
+                    font-size: 16px;
+                    color: rgb(16, 8, 24);
+                }
+
+                .btn {
+                    background-color: rgb(226, 43, 76);
+                    color: rgb(5, 19, 19);
+                    border: none;
+                    padding: 12px 35px;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    animation: pulse 2s;
+
+                }.card-back {
+                    background-color: brown;
+                    color: aliceblue;
+                    transform: rotatey(180deg);
+                    text-align: center;
+                }
+
+                .card-back h2 {
+                    font-size: 28px;
+                    margin-bottom:  10px;
+                }
+
+                .card-back p {
+                    font-size: 16px;
+                    padding: 0px;
+    
+
+                }
+
+
+
+
+            
+                </style>
+                </head>
+
+                <body>
+                    <div class="card-container" onclick="this.classList.toggle('flipped')">
+                        <div class="card">
+
+                            <div class="card-front">
+                                <img src="https://up.yimg.com/ib/th/id/OIP.brFUE6Lrpk0_cGlbUUbZcgHaH_?pid=Api&rs=1&c=1&qlt=95&w=109&h=118" alt="profile" class="profile-image">
+                                <div class="name">Zoople</div>
+                                <div class="title">Frontend Developer</div>
+                                <button class="btn">Follow</button>
+                            </div>
+
+                            <div class="card-back">
+                                <h2>About Me</h2>
+                                <p>I love building modern web apps using react,Node.js, and CSS animation!</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </body>
+                </html>

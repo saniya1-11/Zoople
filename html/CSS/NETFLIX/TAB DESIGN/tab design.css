@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(181, 118, 168);
+}
+
+.container{
+    max-width: 950px;   
+    width: 100%;
+    height: 400px;
+    background: rgb(188, 158, 211);
+    border-radius: 12px;
+    margin: 0 20px;
+    padding: 40px 50px 40px 40px;
+    box-shadow: 0px 9px 10px rgb(144, 44, 119);
+
+}
+
+.container .main-title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.container .content .list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+} 
+
+.container .list label{
+    background: rgb(108, 187, 133);
+    width: 30%;
+    height: 60px;
+    box-shadow: 0px 5px 2px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 12px;
+    line-height: 60px;
+    margin: 5px a;
+    padding-left: 29px;
+    color: blueviolet;
+    z-index: 12;
+
+}
+
+.content .indicator{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    background: rgb(158, 95, 158);
+    border-radius: 12px;
+    box-shadow: 0px 1px 5px rgb(108, 187, 133);
+
+
+}
+
+#home:checked ~.indicator{
+    top: 0;
+}
+
+#blog:checked ~.indicator{
+    top:0;
+}
+
+#help:checked ~.indicator{
+    top: 0;
+}
+
+#code:checked ~.indicator{
+    top: 0;
+}
+
+#about:checked ~.indicator{
+    top: 0;
+}

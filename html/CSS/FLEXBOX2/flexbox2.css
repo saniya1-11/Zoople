@@ -1,0 +1,37 @@
+.container{
+    margin: 0px;
+}
+
+.layout{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+ .layout-image{
+    width: 300px;
+    height: 200px;
+ }
+
+
+   
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    padding: 10px;
+    height:auto
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 5px;
+
+}
+.btn{
+    background-color: rgb(61, 61, 191);
+    border-radius: 25px;
+}

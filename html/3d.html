@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <style>
+            .outer{
+                width: 120px;
+                height: 80px;
+                transform-style: preserve-3d;
+                transition: transform .6;
+                background: rgb(116, 208, 203);
+            }
+            .outer:hover{
+                transform: rotateY(78deg);
+            }
+            .inner{
+                position: relative;
+                transform: translateZ(20pz);
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <h1 class="inner">Inner</h1>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+}
+h1{
+    margin: 0px;
+}
+.Container{
+    background-color: rgb(75, 162, 191);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: flex-start;
+    gap: 3px;
+    
+}
+.one,.two,.three{
+    width: 300px;  
+    height: 200px;
+    background-color: rgb(255, 214, 137);
+    border:1px solid rgb(199, 183, 183);
+    text-align: center;
+    padding: 5px;
+}
+.one {
+    order:3;
+}
+.two{
+    order:2;
+}
+.three{
+    order:1;
+}
+.three{
+    flex:1;
+}

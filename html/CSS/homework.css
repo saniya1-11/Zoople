@@ -1,0 +1,40 @@
+body {
+    background-color: #FEFDE1; /* Light Yellow */
+    text-align: center;
+    padding: 50px;
+    height: 100;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+/* Image style */
+.card {
+    width: 400px;
+    border: 3px solid rgb(209, 27, 20);
+    border-radius: 10px;
+}
+
+/* Dashed box for quote */
+.quote {
+    border: 2px dashed orange;
+    display: inline-block;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+/* Audio Player spacing */
+.audio-box {
+    margin: 20px;
+}
+
+/* Button style */
+.orange-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
